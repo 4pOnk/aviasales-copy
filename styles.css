@@ -1,0 +1,603 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Inter,Helvetica,Arial,sans-serif;
+}
+
+.headerLogo{
+    width: 30px;
+}
+
+.starterPage{
+    height: 100vh;
+    background-color: #0c73fe;
+    color: white;
+}
+
+.header{
+    position: fixed;
+    background-color: #0c73fe;
+    height: 50px;
+    padding-left: 4.5vw;
+    z-index: 99;
+    width: 100%;
+}
+
+.header .logo{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.userSettings{
+    display: flex;
+    position: absolute;
+    width: 190px;
+    height: 30px;
+    right: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.header .logo span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 33px;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.curHide{
+    display: none;
+}
+.tileHide{
+    display: none;
+}
+.tileHead img{
+    filter: invert(1);
+    width: 20px;
+}
+.userHead img{
+    filter: invert(1);
+    width: 20px;
+}
+.themeSlide, .curHead, .tileHead, .userHead{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 8px;
+    cursor: pointer;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Inter,Helvetica,Arial,sans-serif;
+}
+.curHead{
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+.curHead *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.tileHead, .userHead{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.tileHead *, .userHead *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.themeSlide{
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    background-image: url(https://www.aviasales.ru/helios-assets/day_background-c5da671bcf373400254460a34fe95505.svg);
+}
+.themeSlide span{
+    height: 20px;
+    width: 20px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4px;
+    background-image: radial-gradient(49.25% 49.25% at 50% 50%,#ff8742 0,#ffd092 100%);;
+}
+.starterText{
+    position: absolute;
+    width: 100%;
+    top: 15vh;
+    text-align: center;
+}
+.starterText h1{
+    font-family: Stapel,-apple-system,BlinkMacSystemFont,Roboto,Inter,Helvetica,Arial,sans-serif;
+    font-size: 2.75rem;
+    font-weight: 900;
+    line-height: 3.5625rem;
+    margin-bottom: 15px;
+}
+.starterText h3{
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Inter,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+}
+.inpSet{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 40vh;
+    width: 100%;
+    height: 30px;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Inter,Helvetica,Arial,sans-serif;
+    font-size: .75rem;
+    text-align: center;
+    text-indent: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.inpSet a{
+    background-color: #4996fe;
+    margin: 0 6px;
+    border-radius: 30px;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+.switchChoose{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.switchChoose span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.chooseSt{
+    width: 130px;
+    position: relative;
+    font-weight: 800;
+    font-size: 12px;
+    border: 1px solid white;
+}
+.chooseSt:first-child{
+    border-radius: 30px 0 0 30px;
+    background-color: white;
+    color: #0c73fe;
+}
+.chooseSt:last-child{
+    border-radius: 0 30px 30px 0 ;
+}
+
+.searcBilForm{
+    position: absolute;
+    top: 50%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr) 200px;
+    width: 90vw;
+    left: 5vw;
+    height: 60px;
+}
+.searcBilForm input{
+    height: 100%;
+    width: 98.8%;
+    border: none;
+    outline: none;
+}
+.from input{
+ border-radius: 5px 0 0 5px;
+}
+
+.pasClasSetings{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: -1px;
+    border-radius: 0 5px 5px 0;
+
+}
+.submitFind{
+    position: relative;
+    left: 8px;
+    border-radius: 6px;
+    background: #f57c00 url('https://www.aviasales.ru/helios-assets/plane-0c51bd9fc764931bcd5ca6f570958296.svg') no-repeat;
+    background-position: 95% 10px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.1875rem;
+    white-space: nowrap;
+    color: white;
+    font-weight: 700;
+    width: 190px;
+}
+.from span, .pasClasSetings>span{
+    font-size: .625rem;
+    font-weight: 400;
+    letter-spacing: .0625rem;
+    line-height: 1.3125rem;
+    text-transform: uppercase;
+    position: absolute;
+    transform: translateY(-100%);
+}
+
+.searcBilForm div>input{
+    font-size: 16px;
+    text-indent: 15px;
+}
+.pasCount{
+    color: #0c131d;
+    height: auto;
+    overflow: hidden;
+    line-height: 1.25rem;
+    white-space: nowrap;
+}
+.flyingType{
+    color: #b9c4cb;
+}
+.passageres{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+.infoMore{
+    overflow: hidden;
+    font-size: 17px;
+    width: 100%;
+    background-color: #eaf5ff;
+    height: 66px;
+    position: relative;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.1);
+}
+.infoMore div{
+    display: flex;
+    height: 10em;
+    align-items: center;
+    cursor: pointer;
+    max-width: 800px;
+    margin: auto;
+    font-weight: 400;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.infoMore div *{
+    padding-left: 10px;
+}
+.infoMore div a{
+    text-decoration: none;
+    color: #0c73fe;
+}
+.infoMore div a:hover{
+    color: #ff9800;
+}
+
+
+.infoBlock{
+    background: linear-gradient(#eaf5ff,#fff);
+    width: 100%;
+    position: relative;
+}
+
+.infoBlock .clouds{
+    position: absolute;
+    display: block;
+    padding:50px;
+}
+
+.infoText{
+    display: block;
+    position: relative;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.infoText h1{
+    position: relative;
+    text-align: center;
+    font-family: Stapel,-apple-system,BlinkMacSystemFont,Roboto,Inter,Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 2.75rem;
+    width: 60%;
+    left: 50%;
+    color: #25272b;
+    transform: translateX(-50%);
+}
+.infoText p{
+    position: relative;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Inter,Helvetica,Arial,sans-serif;
+    font-size: 1.1625rem;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    margin-top: 30px;
+    color: #0c131d;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+}
+
+.recomendations{
+    display: flex;
+    height: 290px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.recomendations div{
+    background-color: white;
+    box-shadow:  0 2px 6px rgba(63,99,128,0.15);
+    height: 290px;
+    width: 230px;
+    margin:auto;
+    border-radius: 15px;
+    padding-left: 22px;
+}
+
+.recomendations>div>*{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.recomendations img{
+    position: relative;
+    top: 50px;
+}
+.recomendations h3{
+    position: relative;
+    top: 60px;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+    color: #0c131d;
+}
+.recomendations p{
+    position: relative;
+    top: 65px;
+    font-size: .6875rem;
+    font-weight: 400;
+    line-height: .875rem;
+    padding-right: 60px;
+}
+.recomendations a{
+    position: relative;
+    display: block;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 190px;
+    height: 40px;
+    text-decoration: none;
+    border: 1px solid #0c73fe;
+    border-radius: 7px;
+}
+.recomendations a>span{
+    position: relative;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #0c73fe;
+    font-weight: 700;
+}
+.recomendations a:hover{
+    color: white;
+    background-color: #0c73fe;
+}
+.recomendations a:hover span{
+    color: white;
+}
+.recomendations>*:hover{
+    -webkit-box-shadow: 1px 16px 63px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 16px 63px -20px rgba(0,0,0,0.75);
+    box-shadow: 1px 16px 63px -20px rgba(0,0,0,0.75);
+    transition: .5s;
+}
+
+
+.achivements{
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 300px;
+    padding: 0  20% ;
+}
+.achivements>*{
+    margin: auto;
+    width: 265px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.imgBlock{
+    position: absolute;
+    background-color: #d9eaff;
+    width: 72px;
+    height: 72px;
+    display: block;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.imgBlock *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.achivText{
+    padding-left: 80px;
+}
+.achivText h3{
+    font-size: 17px;
+    color: #0c73fe;
+}
+.achivText p{
+    font: 12px Inter,sans-serif;
+}
+.achivements>div:hover h3{
+    color: #f57c00;
+    transition: .5s;
+}
+
+
+.appAd{
+    position: relative;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 100px;
+}
+.appSliser{
+    position: relative;
+    width: 728px;
+    height: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slideImages{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    height: 407px;
+    width: 100%
+
+}
+.iPhoneFront{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+}
+.slideImages *{
+    position: absolute;
+    box-shadow: 0 2px 10px rgba(63,99,128,0.15);
+    top: 0;
+    transition: .3s;
+}
+.slideImg0, .slideImg4{
+    z-index: 2;
+    opacity: .6;
+    transform: scale(.9);
+}
+.slideImg1, .slideImg3{
+    z-index: 3;
+    opacity: .8;
+    transform: scale(.95);
+}
+.slideImg2{
+    z-index: 4;
+    opacity: 1;
+}
+
+.slideImg0{
+left: 0;
+}
+.slideImg1{
+left: 25%;
+transform: translateX(-25%) scale(.95);
+}
+.slideImg2{
+left: 50%;
+transform: translateX(-50%);
+}
+.slideImg3{
+    left: 75%;
+    transform: translateX(-75%) scale(.95);
+}
+.slideImg4{
+    left: 100%;
+    transform: translateX(-100%) scale(.9);
+}
+/*#slideImg4{
+    transform: translateX(-148px) scale(1);
+    opacity: 1;
+    z-index: 10;
+}*/
+.butToRight, .butToLeft{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(63,99,128,0.15);
+    z-index: 5;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    cursor: pointer;
+}
+.butToRight>*, .butToLeft>*{
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    border-left: 2px solid rgb(12 115 254);
+    border-bottom: 2px solid rgb(12 115 254);
+    margin-left: 2px
+}
+.butToLeft{
+    left: 100%;
+    transform: translate(-50%,-50%);
+}
+.butToLeft>*{
+    margin: 0;
+    margin-right: 2px;
+    transform: translate(-50%,-50%) rotate(-135deg);
+}
+.appAd h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.appAd p{
+    position: relative;
+    width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Inter,Helvetica,Arial,sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.5625rem;
+}
+.imgDiscription{
+    background-color: blue;
+    top: 100%;
+    position: relative;
+}
+.imgDiscription p{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+.imgDiscription p:nth-child(3){
+    display: block;
+}
